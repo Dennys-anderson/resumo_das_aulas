@@ -22,11 +22,16 @@ Git GitHub
 / git branch $ = cria um novo branch 
 / git checkout % = muda o branch em que se está
 / git checkout -b $ = cria um novo branch e muda o branch em que se está
+/ git checkout -- # = desfaz as alterações não comitadas
+/ git reset HEAD # = desmarca um arquivo que seria comitado
 / git merge % = une o branch atual com o branch especificado (use o codigo [:X] para finalizar)
 / git rebase % = atualiza o branch atual com todas as alterações do branch especificado
-
-
-
+/ git reverse ~ = cria um novo commit revertendo o arquivo para um comite escolhido (numero do hash)
+/ git stash = salva de maneira temporaria os aquivos não comitados, sem geram um commit
+/ git stash list = mostra todos os stash salvos
+/ git stash apply ? = aplica as modificações contidas na stash ao projeto, mantendo o stash ainda salvo
+/ git stash drop ? = apaga a stash escolhida
+/ git stash pop ? = aplica as modificações contidas na stash ao projeto, apagando a stash escolhida
 
 
 
@@ -49,3 +54,5 @@ Git GitHub
 / @ = Caminho do arquivo/servidor
 / & = Nome do servidor
 / % = Nome do branch 
+/ ~ = numero do hash
+/ ? = Numero da stash
