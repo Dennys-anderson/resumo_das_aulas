@@ -17,12 +17,14 @@ Git GitHub
 / git clone @ $ = clona um repositorio remoto com um novo nome 
 / git rename & & = renomeia o servidor localmente
 / git push & % = envia o conteudo do repositorio para o servidor remoto
-/ git push -u & % =  envia o conteudo do repositorio para o servidor remoto especificando para qual servidor e brench
+/ git push -u & % =  envia o conteudo do repositorio para o servidor remoto especificando para qual servidor e branch
 / git pull & % = trás o conteudo do repositorio remoto para a pasta 
 / git branch $ = cria um novo branch 
 / git checkout % = muda o branch em que se está
 / git checkout -b $ = cria um novo branch e muda o branch em que se está
 / git checkout -- # = desfaz as alterações não comitadas
+/ git checkout ~ = navega até o branch escolhido 
+/ git checkout -b % = cria um novo branch a partir do ponto em que se está
 / git reset HEAD # = desmarca um arquivo que seria comitado
 / git merge % = une o branch atual com o branch especificado (use o codigo [:X] para finalizar)
 / git rebase % = atualiza o branch atual com todas as alterações do branch especificado
@@ -32,6 +34,10 @@ Git GitHub
 / git stash apply ? = aplica as modificações contidas na stash ao projeto, mantendo o stash ainda salvo
 / git stash drop ? = apaga a stash escolhida
 / git stash pop ? = aplica as modificações contidas na stash ao projeto, apagando a stash escolhida
+/ git diff = mostra as alterações que ainda não foram commitadas 
+/ git diff ~..~ = mostra todas as alterações feitas entre as versões especificadas
+
+/ git tag -a $ = cria um ponto de inflexão, uma release!
 
 
 
